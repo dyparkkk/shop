@@ -1,0 +1,7 @@
+spring:
+  output.ansi.enabled: always   # terminal color
+
+  devtools:
+    restart:
+      enabled: true
+
