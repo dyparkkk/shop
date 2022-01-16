@@ -5,6 +5,7 @@ import myproj.shop.member.dto.MemberDto;
 import myproj.shop.member.service.MemberService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -22,6 +23,14 @@ public class MemberController {
 //    }
 
     @RequestMapping(value = "/join", method = RequestMethod.GET)
-    public String join_member(@ModelAttribute("joinMember") MemberVo)
+    public String join_member(){
+        return "member/join";
+    }
+
+    @PostMapping("/join")
+    public String joinMemberPost(){
+
+        return "///";
+    }
 
 }
